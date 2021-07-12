@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   
   res.send('Hello World');
 });
-const internalURL = "http://localhost:8080/api/v1/add"
+const internalURL = "http://internal:8080/api/v1/add"
 app.get('/api/v1/add',async (req,res)=>{
   const payload = JSON.stringify(req.body)
   console.log("external req")
